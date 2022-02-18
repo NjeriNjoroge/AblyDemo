@@ -43,6 +43,7 @@ class ViewController: UIViewController {
 
         /// Subscribe to messages on channel
         channel.subscribe("INSERT NAME") { message in
+            print("Received, \(message.data)")
             if let msg = message.data as? NSArray {
                 self.messageData.append(msg)
             }
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
           chartEntry.append(dataEntry)
         }
         
-        let set1 = LineChartDataSet(entries: chartEntry, label: "INSERT NAME")
+        let set1 = LineChartDataSet(entries: chartEntry, label: "NAME")
         set1.mode = .linear
         set1.drawCirclesEnabled = false
         set1.setColor(.white)

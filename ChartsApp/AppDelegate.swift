@@ -5,7 +5,7 @@ import Ably
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    let ably = ARTRealtime(key: "INSERT KEY")
+    let ably = ARTRealtime(key: "INSERT NAME")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

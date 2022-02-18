@@ -7,6 +7,7 @@ target 'ChartsApp' do
 
 # For Xcode 7.3 and newer
 pod 'Ably', '>= 1.2'
+
 pod 'Charts'
 
   # Pods for ChartsApp
